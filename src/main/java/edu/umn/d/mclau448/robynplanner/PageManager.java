@@ -28,7 +28,8 @@ public class PageManager implements Page{
     }
 
     public void addPage(String pageType){
-
+        PageFactory p = new PageFactory();
+        pages.put(pageType, p.createPage(pageType));
     }
 
 }
