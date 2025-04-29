@@ -7,5 +7,4 @@ public interface Page {
 
     public void load(String data);
 
-    public void onPageClose();
 }

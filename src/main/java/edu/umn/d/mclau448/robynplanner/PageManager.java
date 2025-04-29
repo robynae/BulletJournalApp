@@ -22,10 +22,6 @@ public class PageManager implements Page{
 
     }
 
-    @Override
-    public void onPageClose() {
-        save();
-    }
 
     public void addPage(String pageType, String pageTitle){
         PageFactory p = new PageFactory();

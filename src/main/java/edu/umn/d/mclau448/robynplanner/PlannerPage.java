@@ -27,8 +27,4 @@ public class PlannerPage implements Page{
 
     }
 
-    @Override
-    public void onPageClose() {
-
-    }
 }
