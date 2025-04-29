@@ -1,9 +1,11 @@
 package edu.umn.d.mclau448.robynplanner;
 
 public interface Page {
-    String getPageType();
+    public String getPageType();
 
-    void save();
+    public void save();
 
-    void load(String data);
+    public void load(String data);
+
+    public void onPageClose();
 }
