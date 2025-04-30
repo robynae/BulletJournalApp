@@ -20,6 +20,9 @@ public class PlannerPage implements Page{
         taskList.put(t.getTask(), t);
     }
 
+    public void removeTodo(String task){
+        taskList.remove(task);
+    }
 
     @Override
     public String getPageType() {
