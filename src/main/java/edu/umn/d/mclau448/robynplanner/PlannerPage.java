@@ -10,6 +10,15 @@ public class PlannerPage implements Page{
         this.plannerTitle = plannerTitle;
     }
 
+    public void addTodo(String task, String desc, String deadLine, Integer priority){
+        Todo t = new Todo.TodoBuilder(task)
+                .setDescription(desc)
+                .setDeadline(deadLine)
+                .setPriority(priority)
+                .build();
+
+        taskList.put(t.getTask(), t);
+    }
 
 
     @Override
