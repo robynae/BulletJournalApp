@@ -2,11 +2,11 @@ package edu.umn.d.mclau448.robynplanner;
 
 import java.util.HashMap;
 
-public class PlannerPage implements Page{
+public class Planner{
     private String plannerTitle;
     private HashMap<String, Todo> taskList = new HashMap<>();
 
-    public PlannerPage(String plannerTitle){
+    public Planner(String plannerTitle){
         this.plannerTitle = plannerTitle;
     }
 
@@ -22,21 +22,6 @@ public class PlannerPage implements Page{
 
     public void removeTodo(String task){
         taskList.remove(task);
-    }
-
-    @Override
-    public String getPageType() {
-        return "PlannerPage";
-    }
-
-    @Override
-    public void save() {
-
-    }
-
-    @Override
-    public void load(String data) {
-
     }
 
 }
