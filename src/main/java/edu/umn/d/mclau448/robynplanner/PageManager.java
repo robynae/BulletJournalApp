@@ -28,4 +28,8 @@ public class PageManager implements Page{
         pages.put(pageType, p.createPage(pageType, pageTitle));
     }
 
+    public void removePage(String pageTitle){
+        pages.remove(pageTitle);
+    }
+
 }
