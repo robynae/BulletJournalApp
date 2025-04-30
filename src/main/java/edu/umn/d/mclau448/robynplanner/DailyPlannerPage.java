@@ -12,7 +12,7 @@ public class DailyPlannerPage extends Planner implements Page{
     public String getDate(){
       Date d = new Date();
       String[] formatDate = d.toString().split(" ");
-      return formatDate[0] + " " + formatDate[1];
+      return formatDate[0] + ", " + formatDate[1] + " " + formatDate[2];
     }
 
     @Override
