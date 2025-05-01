@@ -118,9 +118,18 @@ public class HelloApplication extends Application {
         pageContainer.add(page, 0,0);
         content.setCenter(pageContainer);
 
-        Scene scene = new Scene(content,1280,720);
+        //Styling for Scene2...kinda
+        BorderPane pageContent = new BorderPane();
+        Button backButton = new Button("Back");
+        pageContent.setCenter(backButton);
 
-        stage.setScene(scene);
+        Scene scene1 = new Scene(content,1280,720);
+        Scene scene2 = new Scene(pageContent, 1280, 720);
+
+        page.setOnMouseClicked(e -> stage.setScene(scene2));
+        backButton.setOnMouseClicked(e -> stage.setScene(scene1));
+
+        stage.setScene(scene1);
         stage.show();
     }
 
