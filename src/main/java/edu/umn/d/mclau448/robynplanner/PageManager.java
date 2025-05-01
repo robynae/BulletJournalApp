@@ -31,4 +31,8 @@ public class PageManager implements Page{
         pages.remove(pageTitle);
     }
 
+    public HashMap<String, Page> getPages(){
+        return this.pages;
+    }
+
 }
