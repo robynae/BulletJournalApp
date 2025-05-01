@@ -120,8 +120,17 @@ public class HelloApplication extends Application {
 
         //Styling for Scene2...kinda
         BorderPane pageContent = new BorderPane();
+        pageContent.setStyle("-fx-background-color: #fdf6f0");
+
         Button backButton = new Button("Back");
-        pageContent.setCenter(backButton);
+        backButton.setFont(Font.font("Cambria", FontWeight.BOLD, 20));
+        backButton.setStyle("-fx-background-color: transparent;" +
+                "-fx-text-fill: #F765F2;" +
+                " -fx-border-radius: 15;" +
+                " -fx-border-width: 5px;" +
+                " -fx-border-color: #F765F2;");
+        BorderPane.setMargin(backButton, new Insets(25,0,0,25));
+        pageContent.setTop(backButton);
 
         Scene scene1 = new Scene(content,1280,720);
         Scene scene2 = new Scene(pageContent, 1280, 720);
