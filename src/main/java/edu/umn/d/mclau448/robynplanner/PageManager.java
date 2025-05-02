@@ -24,7 +24,7 @@ public class PageManager implements Page{
 
     public void addPage(String pageType, String pageTitle){
         PageFactory p = new PageFactory();
-        pages.put(pageType, p.createPage(pageType, pageTitle));
+        pages.put(pageTitle, p.createPage(pageType, pageTitle));
     }
 
     public void removePage(String pageTitle){

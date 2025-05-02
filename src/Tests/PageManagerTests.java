@@ -16,4 +16,17 @@ public class PageManagerTests {
         p.addPage("DailyPlanner", "CS Final Project");
         assertEquals(1, p.getPages().size());
     }
+
+    @Test
+    public void testRemovePage(){
+        p.addPage("DailyPlanner", "CS Final Project");
+        p.removePage("CS Final Project");
+        assertEquals(null, p.getPages().get("CS Final Project"));
+    }
+
+    //right now, this will fail
+    @Test
+    public void testPageWithSameTitle(){
+
+    }
 }
