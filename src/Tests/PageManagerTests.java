@@ -24,9 +24,5 @@ public class PageManagerTests {
         assertEquals(null, p.getPages().get("CS Final Project"));
     }
 
-    //right now, this will fail
-    @Test
-    public void testPageWithSameTitle(){
-
-    }
+    //need a test to check creating multiple pages with the same name but removing only one
 }
